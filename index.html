@@ -15,7 +15,7 @@
     <li>Does Erin know how to change a tire? : Yes</li>
     <li>Does Erin want a reptile for a pet? : No</li>
     <li>Is Erin an aunt? : Yes</li>
-    <li>Does Erin like brocolli? : No </li>
+    <li>Does Erin like broccoli? : No </li>
   </ol>
 
  <script>
@@ -34,7 +34,7 @@
     }else {
         alert('Please provide a yes/y or no/n');
     }
-    console.log('Does Erin like baking? : ' + userName);
+    console.log('Does Erin like baking? : ' + baking);
 
     //changing a tire question
     var tire = prompt('Does Erin know how to change a tire?');
@@ -47,6 +47,43 @@
         alert('Please provide a yes/y or no/n');
     }
     console.log('Does Erin know how to change a tire? : ' + tire);
+
+    //reptile question
+    var reptile = prompt('Does Erin want a reptile for a pet?');
+    reptile.toLowerCase();
+    if (reptile==='yes'|| reptile==='y'){
+        alert('Ewwwww!!!');
+    }else if(reptile==='no'|| reptile==='n'){
+        alert('Correct ' + userName + '!');
+    }else {
+        alert('Please provide a yes/y or no/n');
+    }
+    console.log('Does Erin want a reptile for a pet? : ' + reptile);
+
+    //aunt question
+    var aunt = prompt('Is Erin an aunt?');
+    aunt.toLowerCase();
+    if (aunt==='yes'|| aunt==='y'){
+        alert('Correct! My nephew is the most adorable little human in the world!');
+    }else if(aunt==='no'|| aunt==='n'){
+        alert('Incorrect ' + userName);
+    }else {
+        alert('Please provide a yes/y or no/n');
+    }
+    console.log('Is Erin an aunt? : ' + aunt);
+
+     //broccoli question
+    var broccoli = prompt('Does Erin like broccoli?');
+    broccoli.toLowerCase();
+    if (broccoli==='yes'|| broccoli==='y'){
+        alert('Ewwwww!!! Yuck');
+    }else if(broccoli==='no'|| broccoli==='n'){
+        alert('Correct ' + userName + '! Broccoli is yucky.');
+    }else {
+        alert('Please provide a yes/y or no/n');
+    }
+    console.log('Does Erin like broccoli? : ' + broccoli);
+
  </script> 
 </body>
 </html>
