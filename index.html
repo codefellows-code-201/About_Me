@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Erin</title>
+  <link rel="stylesheet" href="style.css"
 </head>
 <body>
-    <script>
-    </script>
+  <h1>About Erin</h1>
+  <!--List of Questions-->
+  <ol>
+    <li>Does Erin like baking? : Yes</li>
+    <li>Does Erin know how to change a tire? : Yes</li>
+    <li>Does Erin want a reptile for a pet? : No</li>
+    <li>Is Erin an aunt? : Yes</li>
+    <li>Does Erin like brocolli? : No </li>
+  </ol>
+
+ <script>
+     'use strict';
+     //userName request
+    var userName = prompt('Welcome to my site, what\'s your name?');
+    console.log('What is your name?:' + userName);
+
+    //baking question
+    var baking = prompt('Does Erin like baking?');
+    baking.toLowerCase();
+    if (baking==='yes'|| baking==='y'){
+        alert('Great job, ' + userName);
+    }else if(baking==='no'|| baking==='n'){
+        alert('Silly! Of course I love baking, it involves chocolate!');
+    }else {
+        alert('Please provide a yes/y or no/n');
+    }
+    console.log('Does Erin like baking? : ' + userName);
+
+    //changing a tire question
+    var tire = prompt('Does Erin know how to change a tire?');
+    tire.toLowerCase();
+    if (tire==='yes'|| tire==='y'){
+        alert('Great job, ' + userName);
+    }else if(tire==='no'|| tire==='n'){
+        alert('Wrong! Although if it is raining or muddy I conveniently forget I have this knowledge');
+    }else {
+        alert('Please provide a yes/y or no/n');
+    }
+    console.log('Does Erin know how to change a tire? : ' + tire);
+ </script> 
 </body>
 </html>
