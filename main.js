@@ -7,7 +7,7 @@ var correctAnswers = 0;
 var userName;
 
 do{
-  userName = prompt('What is your name":');
+  userName = prompt('What is your name?');
 }while(!userName);
 
 console.log('What is your name?:' + userName);
@@ -84,24 +84,29 @@ if (broccoli==='yes'|| broccoli==='y'){
 console.log('Does Erin like broccoli? : ' + broccoli);
 
 // lego questions
-var legoQuestion = prompt('How many Lego structures are displayed in Erin\'s house?');
+var legoQuestion = parseInt(prompt('How many Lego structures are displayed in Erin\'s house?'));
 var legoAnswer = 13;
 
 for(var legoTurns = 0; legoTurns < 3; legoTurns++){
   if(legoQuestion < legoAnswer){
-    legoQuestion = prompt('Too low!');
+    legoQuestion = parseInt(prompt('Too low!'));
     console.log ('How many Lego structures are displayed in Erin\'s house? ' + legoQuestion);
   }
   else if(legoQuestion > legoAnswer){
-    legoQuestion = prompt('Seriously?? That might be too many even for me.');
+    legoQuestion = parseInt(prompt('Seriously?? That might be too many even for me.'));
     console.log ('How many Lego structures are displayed in Erin\'s house? ' + legoQuestion);
   }
-  else {
-    alert('Correct!');
-    console.log ('How many Lego structures are displayed in Erin\'s house? ' + legoQuestion);
-    correctAnswers++;
+  else if (legoAnswer===legoQuestion){
     break;
+
+  }else {
+    legoQuestion = parseInt(prompt(('Please enter a number')));
   }
+}
+if(legoAnswer === legoQuestion){
+  alert('Correct!');
+  console.log ('How many Lego structures are displayed in Erin\'s house? ' + legoQuestion);
+  correctAnswers++;
 }
 
 console.log ('How many Lego structures are displayed in Erin\'s house? ' + legoQuestion);
@@ -113,7 +118,7 @@ var guessCounter = 6;
 
 do{
   var countryAnswer = prompt('Which countries has Erin visited?').toUpperCase();
-  
+
   for(var i = 0; i < country.length; i++){
     if(country[i] === countryAnswer){
       answeredCorrectly = true;
