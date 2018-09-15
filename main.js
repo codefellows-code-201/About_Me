@@ -81,18 +81,20 @@ console.log('What is your name?:' + userName);
 // console.log ('How many Lego structures are displayed in Erin\'s house? ' + legoQuestion);
 
 // country question
-var countryGuesses = 0;
-var visitCountry = ['United Kingdom', 'Scotland', 'England', 'France', 'Canada'];
-var countryQuestion = prompt('Which countries has Erin visited?').toLowerCase();
+var country = ['United Kingdom', 'Scotland', 'England', 'France', 'Canada'];
 
-for(countryGuesses = 0; countryGuesses < 5; countryGuesses++){
-  if(countryQuestion !== visitCountry[countryGuesses]){
-    countryQuestion = prompt('I wish! Try again!').toLowerCase();
-    console.log ('Which countries has Erin visited? ' + countryQuestion);
-  }
-  else if(countryQuestion === visitCountry[countryGuesses]){
-    countryQuestion = prompt('Yes! It was amazing!');
-    console.log ('Which countries has Erin visited? ' + countryQuestion);
+for(var i = 0; i <= 6; i++){
+  var countryQuestion = prompt('Which countries has Erin visited?').toLowerCase();
+  console.log(countryQuestion);
+
+  for(var j = 0; j < country.length; j++){
+    countryQuestion = prompt('Which countries has Erin visited?').toLowerCase();
+    if(countryQuestion === (country[i])){
+      alert('Yes! It was amazing!');
+    }
+    else if(country[i] !== countryQuestion) {
+      countryQuestion = prompt('I wish! Try again!').toLowerCase();
+    }
   }
 }
-// console.log ('How many Lego structures are displayed in Erin\'s house? ' + legoQuestion);
+
