@@ -6,6 +6,8 @@ var correctAnswers = 0;
 //userName request
 var userName;
 
+var userNameQuestion = function(){
+
 do{
   userName = prompt('What is your name?');
 }while(!userName);
@@ -13,7 +15,12 @@ do{
 console.log('What is your name?:' + userName);
 alert('Welcome to my about me guessing game ' + userName);
 
+return userNameQuestion;
+}
+
 //baking question
+var bakingQuestion = function(){
+
 var baking = prompt('Does Erin like baking?').toLowerCase();
 
 if (baking==='yes'|| baking==='y'){
@@ -27,7 +34,12 @@ if (baking==='yes'|| baking==='y'){
 
 console.log('Does Erin like baking? : ' + baking);
 
+return bakingQuestion;
+}
+
 // changing a tire question
+var tireQuestion = function(){
+
 var tire = prompt('Does Erin know how to change a tire?').toLowerCase();
 
 if (tire==='yes'|| tire==='y'){
@@ -41,7 +53,12 @@ if (tire==='yes'|| tire==='y'){
 
 console.log('Does Erin know how to change a tire? : ' + tire);
 
+return tireQuestion;
+}
+
 // //reptile question
+var reptileQuestion = function(){
+
 var reptile = prompt('Does Erin want a reptile for a pet?').toLowerCase();
 
 if (reptile==='yes'|| reptile==='y'){
@@ -55,7 +72,12 @@ if (reptile==='yes'|| reptile==='y'){
 
 console.log('Does Erin want a reptile for a pet? : ' + reptile);
 
+return reptileQuestion;
+}
+
 // //aunt question
+var auntQuestion = function(){
+
 var aunt = prompt('Is Erin an aunt?').toLowerCase();
 
 if (aunt==='yes'|| aunt==='y'){
@@ -69,7 +91,12 @@ if (aunt==='yes'|| aunt==='y'){
 
 console.log('Is Erin an aunt? : ' + aunt);
 
+return auntQuestion;
+}
+
 // //broccoli question
+var broccoliQuestion = function(){
+
 var broccoli = prompt('Does Erin like broccoli?').toLowerCase();
 
 if (broccoli==='yes'|| broccoli==='y'){
@@ -83,7 +110,12 @@ if (broccoli==='yes'|| broccoli==='y'){
 
 console.log('Does Erin like broccoli? : ' + broccoli);
 
+return broccoliQuestion;
+}
+
 // lego questions
+var legoStructureQuestion = function(){
+
 var legoQuestion = parseInt(prompt('How many Lego structures are displayed in Erin\'s house?'));
 var legoAnswer = 13;
 
@@ -111,7 +143,12 @@ if(legoAnswer === legoQuestion){
 
 console.log ('How many Lego structures are displayed in Erin\'s house? ' + legoQuestion);
 
+return legoStructureQuestion;
+}
+
 // country question
+var travelQuestion = function(){
+
 var country = ['UNITED KINGDOM', 'SCOTLAND', 'ENGLAND', 'FRANCE', 'CANADA'];
 var answeredCorrectly = false;
 var guessCounter = 6;
@@ -137,8 +174,26 @@ do{
   guessCounter--;
 }while(guessCounter > 0 && !answeredCorrectly);
 
+return travelQuestion;
 console.log(correctAnswers);
+}
 
+//Quiz Score
+var quizResults = function(){
 
 var quizScore = Math.round(correctAnswers/7*100);
 alert('You scored ' + quizScore + '%');
+
+return quizResults;
+}
+
+//Functions to call
+userNameQuestion();
+bakingQuestion();
+tireQuestion();
+reptileQuestion();
+auntQuestion();
+broccoliQuestion();
+legoStructureQuestion();
+travelQuestion();
+quizResults();
