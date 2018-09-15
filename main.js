@@ -89,10 +89,10 @@ for(var i = 0; i <= 6; i++){
 
   for(var j = 0; j < country.length; j++){
     countryQuestion = prompt('Which countries has Erin visited?').toLowerCase();
-    if(countryQuestion === (country[i])){
+    if(countryQuestion === (country[j])){
       alert('Yes! It was amazing!');
     }
-    else if(country[i] !== countryQuestion) {
+    else if(country[j] !== countryQuestion) {
       countryQuestion = prompt('I wish! Try again!').toLowerCase();
     }
   }
