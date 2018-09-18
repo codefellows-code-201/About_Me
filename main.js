@@ -189,12 +189,12 @@ var quizResults = function(){
 };
 
 //Functions to call
-// userNameQuestion();
-// bakingQuestion();
-// tireQuestion();
-// reptileQuestion();
-// auntQuestion();
-// broccoliQuestion();
-// legoStructureQuestion();
-// travelQuestion();
-// quizResults();
+userNameQuestion();
+bakingQuestion();
+tireQuestion();
+reptileQuestion();
+auntQuestion();
+broccoliQuestion();
+legoStructureQuestion();
+travelQuestion();
+quizResults();
