@@ -80,9 +80,9 @@ div {
 #bottom {
     border: 5px solid black;
     height: 50%;
-    width: 50%;
+    width: 49%;
     display: block;
-    margin-left: auto;
+    margin-left: 418px;
     margin-right: auto;
     margin-bottom: 20px;
     padding: 20px;
@@ -90,7 +90,7 @@ div {
     border-radius: 5%;
 }
 
-.top10 {
+#places, .top10 {
     background: rgb(65, 65, 65);
 }
 
