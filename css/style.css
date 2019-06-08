@@ -1,6 +1,14 @@
+body {
+    background-image: url(../images/background_img.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 h1 {
-    font-family: cursive;
-    font-size: 50px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 6em;
     color: white;
     text-align: center;
     background-color: rgb(65, 65, 65);
@@ -14,8 +22,8 @@ h1 {
     padding-top: 15px;
 }
 ol li {
-    font-family: cursive;
-    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 4em;
     text-align: center;
     list-style-position: inside;
     background-color: rgb(65, 65, 65);
@@ -45,9 +53,10 @@ img {
 #top {
     border: 5px solid black;
     height: 50%;
-    width: 48.75%;
+    width: 50%;
     display: block;
-    margin-left: 418px;
+    margin: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
     background: rgb(65, 65, 65);
@@ -59,17 +68,13 @@ div {
     height: 50%;
     width: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     margin-bottom: 20px;
     padding: 20px;
     background: rgb(65, 65, 65);
     border-radius: 5%;
 }
 
-* {
-    background: rgb(143, 175, 203);
-}
 
 .picture {
     display: block;
@@ -80,10 +85,9 @@ div {
 #bottom {
     border: 5px solid black;
     height: 50%;
-    width: 49%;
+    width: 50%;
     display: block;
-    margin-left: 418px;
-    margin-right: auto;
+    margin: auto;
     margin-bottom: 20px;
     padding: 20px;
     background: rgb(65, 65, 65);
@@ -95,7 +99,7 @@ div {
 }
 
 h2 {
-    font-family: cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 40px;
     text-align: center;
     color: white;
